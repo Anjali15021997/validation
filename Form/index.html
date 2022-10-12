@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICICI BANK FORM</title>
+    <!-- css -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <div class="container">
+        <div class="form-box">
+        <div id="section">
+            <!-- for 1 line -->
+            <div id="logo">
+                <img src="logo.png" alt="icici.com">
+            </div>
+            <p>ACCOUNT OPENING FORM</p>
+        </div>
+        <form name="bank" id="form" action="/" methods="post" onsubmit="return validate()">
+            <div>
+                        <div class="input-field">
+                            
+                            <input id="username" placeholder="Enter username Name" type="text">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <i class="fa" aria-hidden="true"></i>
+                            <span ></span>
+                            
+                        </br>
+                            <div>
+                                <div class="input-field">
+                                    <input id="no" placeholder="Enter Application No" type="password" required />
+                                    <!-- <i class="fa fa-eye" aria-hidden="true" id="show"></i> -->
+                                    <i class="fa" aria-hidden="true"></i>
+                                    <span ></span>
+                                    
+                                </div>
+
+                            </div>
+
+                                <H4>PERSONAL DETAILS</H4>
+                                <div class="input-field">
+                                    <input id="mobile" placeholder="Enter Mobile No." type="number" />
+                                    <!-- <i class="phone" aria-hidden="true"></i> -->
+                                    <div class="form-control"><input id="dob" placeholder="Enter DOB" type="date"
+                                            size="30">
+                                        </br></br>
+                                        </div>
+
+                                <div>       
+                                        <div class="input-field"><input id="pan" placeholder="PAN Number"
+                                            type="text" />
+                                            <i class="fa" aria-hidden="true"></i>
+                                            <span ></span>
+                                          </div>  
+                                </div>
+
+                                        <div class="input-field"><input id="email" placeholder="Enter email@gmail.com"
+                                                type="text" />
+                                                <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+                                                <i class="fa" aria-hidden="true"></i>
+                                                <span ></span>
+                                            </div>    
+                                            </br>
+                                            <div class="gender">
+                                            <div id="radio">
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <fieldset>
+                                                            <legends><B>Gender:</B></legends><br>
+                                                            <Input Type="Radio" name="opt" value="Male"
+                                                                 checked>Male
+                                                            <Input Type="Radio" name="opt" value="Female"> Female
+                                                        </fieldset>
+                                                    </td>
+                                                </tr>
+                                            </div>
+                                        </div>
+<br>
+<section id="location">
+<div id="state">
+<td>
+ state:
+</td>
+<td>
+    <Select>
+        <option>Bihar</option>
+        <option>Jharkhand</option>
+        <option>Chattishgarh</option>
+        <option>UP</option>
+        <option>MP</option>
+        <option>Thirvanantapuram</option>
+        <option>WB</option>
+        <option>Manipur</option>
+        <option>J&K</option>
+        <option>Tripura</option>
+        <option>Mizoram</option>
+        <option>Gujarat</option>
+</td>
+</tr>
+</div>
+<br>
+<div class="address"><input id="address" placeholder="Address">
+    <i class="fa fa-address-card" aria-hidden="true"></i>
+</br></br>
+</div>
+</section>
+                                            <H4>TYPES OF ACCOUNT</H4>
+
+                                            <div class="check">
+                                                <input type="checkbox" name="account">Current Account <br>
+                                                <input type="checkbox" name="account"> Saving Account <br>
+                                                <input type="checkbox" name="account"> Senior Saving <br>
+                                                <input type="checkbox" name="account"> NRFC <br>
+                                            </div>
+                                            <H4>DECLARATION</H4>
+                                            <div class="declare">
+                                                <input type="checkbox" name="account">I Agree <br>
+                                                <P> I hereby take the sole responsibility for the correctness of my Bank
+                                                    Account number and other
+                                                    details mentioned above. I undertake that I will not hold the
+                                                    Company responsible in any manner
+                                                    for any transactions effected by the Company due to incorrect bank
+                                                    account number or other
+                                                    details stated by me.</P>
+                                            </div>
+
+
+
+
+                                            
+                                            <input type="submit" id="submit" value="Submit">
+                                       
+                                        
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </div>
+        </form>
+    </div>
+</div>
+    <!-- javascript -->
+    <script src="script.js"></script>
+
+    </body>
+
+</html>
+
+
+<!-- .error-field.error span  -->
